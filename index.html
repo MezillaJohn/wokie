@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wokie</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWSOME CDN  -->
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JQURY CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img class="logo" src="images/logo2.png" alt="logo" />
+      </div>
+      <div class="hamburger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="" class="active">Send & Receive</a>
+          </li>
+
+          <li>
+            <a href="" class="active">Buy & Sell Crypto</a>
+          </li>
+
+          <li>
+            <a href="" class="active">About</a>
+          </li>
+
+          <li>
+            <a href="" class="active">FAQs</a>
+          </li>
+
+          <li>
+            <a href="" class="active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="container herobox">
+        <div class="hero-textBox">
+          <h2 class="hero-text">
+            <span class="hero-textA">crypto @ your</span>
+            <span class="hero-textB">door step</span>
+          </h2>
+          <p class="hero-subText">
+            Increase your chance at success; Buy & Sell, <br />
+            Send and Receive CryptoCurrencies with<br />
+            just a few clicks.
+          </p>
+          <div class="buttons">
+            <button class="btn btn-indigo">
+              <i class="fa-brands fa-google-play"></i> Google Play
+            </button>
+
+            <button class="btn btn-white">
+              <i class="fa-brands fa-apple"></i> App Store
+            </button>
+          </div>
+        </div>
+        <div class="hero-imageBox">
+          <img class="image-reset" src="images/face.png" alt="phone" />
+        </div>
+      </div>
+    </div>
+
+    <section id="exploreCryptos" class="section-styling-one">
+      <div class="container explore-box">
+        <div class="explore">
+          <h3 class="heading-tertiary explore-header">Explore top Crypto's Like Bitcoin, Ethereum, and Dogecoin</h3>
+          <p>Buy, sell and store hundreds of CryptoCurrencies with our App</p>
+        </div>
+
+        <div class="assets">
+          <div class="assets__coin">
+            <div class="coin">
+              <img height="40px" src="images/bitcoin.png" alt="logo" />
+            </div>
+            <div class="coin-name">Bitcoin</div>
+            <div class="coin-price">$<span id="bitcoin"></span></div>
+          </div>
+
+          <div class="assets__coin">
+            <div class="coin">
+              <img height="40px" src="images/ethe.png" alt="logo" />
+            </div>
+            <div class="coin-name">Ethereum</div>
+            <div class="coin-price">$<span id="ethereum"></span></div>
+          </div>
+
+          <div class="assets__coin">
+            <div class="coin">
+              <img height="40px" src="images/tether.png" alt="logo" />
+            </div>
+            <div class="coin-name">Tether</div>
+            <div class="coin-price">$<span id="tether"></span></div>
+          </div>
+
+          <div class="assets__coin">
+            <div class="coin">
+              <img height="40px" src="images/doge.png" alt="logo" />
+            </div>
+            <div class="coin-name">Dogecoin</div>
+            <div class="coin-price">$<span id="dogecoin"></span></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cryptoJourney" class="section-styling-two">
+      <div class="container">
+          <h2 class="begin-your-journey heading-secondary">Begin Your Crypto Journey On Wokie</h2>
+        <div class="exchange">
+          <div class="exchange__image"><img class="image-reset" src="images/btc-phone.png" alt="wokie"></div>
+          <div class="exchange__text">
+            <h4>Crypto Simplified</h4>
+            <h3 class="heading-tertiary">Buy, Sell and Store Crypto in minutes</h3>
+            <div class="features">
+              <p><span>&check;</span> Create your free wokie account </p>
+              <p><span>&check;</span> Buy and Sell over 100+ CryptoCurrencies </p>
+              <p><span>&check;</span> Enjoy sweet and easy transactions </p>
+            </div>
+            <div class="exchange__btn">
+              <button class="btn btn-indigo">
+                <i class="fa-brands fa-google-play"></i> Google Play
+              </button>
+  
+              <button class="btn btn-white">
+                <i class="fa-brands fa-apple"></i> App Store
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
