@@ -492,6 +492,10 @@ header {
     width: 38rem;
     /* transform: rotate(-12deg); */
   }
+  
+    .explore {
+    padding: 0 3%;
+  }
 }
 
 @media only screen and (max-width: 398px) {
