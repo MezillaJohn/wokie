@@ -280,7 +280,7 @@ header {
 }
 
 .exchange__image {
-  width: 45%;
+  flex: 1 1 20%;
   margin-right: 7rem;
 }
 
@@ -485,7 +485,6 @@ header {
   }
 
   .exchange__image {
-    width: 85%;
     margin: 0 0 var(--space) 0;
   }
 
