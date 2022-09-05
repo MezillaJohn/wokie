@@ -20,6 +20,8 @@ const navigation = function () {
 
 navigation();
 
+//Fetching crypto prices
+
 let settings = {
   async: true,
   scrossDomain: true,
