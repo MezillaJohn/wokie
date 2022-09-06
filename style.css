@@ -216,10 +216,6 @@ header {
   font-size: 2rem;
 }
 
-.buttons button:not(:last-child) {
-  margin-right: var(--space);
-}
-
 /* main section */
 
 /* section one */
@@ -709,6 +705,22 @@ header {
 }
 
 @media (max-width: 464px) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.2rem;
+  }
+
+  .exchange__text h4 {
+    font-size: 1.3rem;
+  }
+
+  .send__text h4 {
+    font-size: 1.3rem;
+  }
+
   .hero-text {
     font-size: 4rem;
   }
