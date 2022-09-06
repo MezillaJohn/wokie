@@ -212,6 +212,10 @@ header {
   border: 1px solid var(--primaryCol);
 }
 
+.buttons button:not(:last-child) {
+  margin-right: var(--space)
+}
+
 .buttons button {
   font-size: 2rem;
 }
