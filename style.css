@@ -553,9 +553,16 @@ header {
 }
 
 @media only screen and (max-width: 900px) {
+  
+  
   html {
     font-size: 62.5%;
   }
+  
+  body {
+    overflow: hidden;
+  }
+  
 
   .section-styling-one,
   .section-styling-two {
