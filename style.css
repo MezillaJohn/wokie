@@ -560,6 +560,7 @@ header {
   .section-styling-one,
   .section-styling-two {
     padding: 6rem 2rem;
+    overflow: hidden;
   }
 
   .heading-tertiary {
@@ -766,6 +767,7 @@ header {
 }
 
 @media (max-width: 464px) {
+  
   .heading-secondary {
     font-size: 3rem;
   }
