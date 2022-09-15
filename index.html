@@ -27,11 +27,8 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- JQURY CDN -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <header>
@@ -166,8 +163,8 @@
 
         </div>
 
-        <div class="hero-imageBox phone">
-          <img data-aos="fade-left" class="image-reset" src="images/phone2.jpg" alt="phone" />
+        <div class="hero-imageBox phone" >
+          <img class="image-reset" src="images/phone2.jpg" alt="phone" />
         </div>
        
       </div>
@@ -182,7 +179,7 @@
          
 
           <div class="exchange__text " >
-            <h3 class="heading-tertiary"> <span>All-in-One</span> for Your Crypto</h3>
+            <h3 class="heading-tertiary animate-heading " data-aos="fade-right" data-aos-duration="600"  data-aos-offset="50"> <span>All-in-One</span> for Your Crypto</h3>
             <div class="features">
               <p><span>&check;</span> Buy, sell, and trade in a few taps. </p>
               <p><span>&check;</span> Earn up to 8% yield on your crypto. </p>
@@ -190,7 +187,9 @@
             </div>
           </div>
 
-          <div class="exchange__image image-animate "  data-aos="fade-left"><img class="image-reset" src="images/all-in-one2.png" alt="wokie"></div>
+          <div class="exchange__image animate-image"  data-aos="fade-up" >
+            <img  class="image-reset" src="images/all-in-one2.png" alt="wokie">
+          </div>
 
         </div>
       </div>
@@ -200,8 +199,8 @@
       <div class="container ">
         <div class="explore-box">
        
-        <div class="assets"  data-aos = 'fade-right'>
-          <div class="assets__coin">
+        <div class="assets animate-image" data-aos="fade-up" >
+          <div class="assets__coin" >
             <div class="coin">
               <img height="40px" src="images/bitcoin.png" alt="logo" />
             </div>
@@ -209,7 +208,7 @@
             <div class="coin-price">$<span id="bitcoin"></span></div>
           </div>
 
-          <div class="assets__coin">
+          <div class="assets__coin" >
             <div class="coin">
               <img height="40px" src="images/ethe.png" alt="logo" />
             </div>
@@ -235,8 +234,8 @@
           </div>
 
 
-          <div class="explore"  >
-            <h3 class="heading-tertiary explore-header">Explore <span>top Crypto's Currencies</span></h3>
+          <div class="explore "  >
+            <h3 class="heading-tertiary explore-header animate-heading" data-aos-offset="50" data-aos="fade-right" data-aos-duration="600" >Explore <span>top Crypto's Currencies</span></h3>
             <p>Buy, sell and store hundreds of CryptoCurrencies with our App</p>
           </div>
 
@@ -251,15 +250,17 @@
         <div class="display-flex">
 
           <div class="send__text  " >
-            <h4>Crypto Simplified</h4>
-            <h3 class="heading-tertiary"><span>Send and Receive Crypto</span> from anywhere in the World</h3>
+            <div class="animate-heading" data-aos="fade-right" data-aos-offset="50" data-aos-duration="600" >
+            <h4 class="send__text--h4">Crypto Simplified</h4>
+            <h3  class="heading-tertiary  send__text--h3"><span>Send and Receive Crypto</span> from anywhere in the World</h3>
+          </div>
             <div class="send-paragraph">
               <p>We are practically bringing crypto to your door step, no extra effort on your part; All you need is the all in one app on your device</p>
             
             </div>
           </div>
 
-          <div class="send__image image-animate" data-aos="fade-left">
+          <div class="send__image animate-image" data-aos="fade-up">
             <img class="image-reset" src="images/send.png" alt="wokie">
           </div>
         </div>
@@ -269,28 +270,28 @@
     <section class="section-styling-two" id="GetStarted">
       <div class="container">
         <div class="simple-steps">
-        <h3 class="heading-tertiary">Four <span>Simple Steps</span></h3>
+        <h3 class="heading-tertiary animate-heading" data-aos="fade-right" data-aos-duration="600" >Four <span>Simple Steps</span></h3>
 
         <div class="steps">
-          <div data-aos="fade-up" data-aos-duration="400"  data-aos-offset="100">
+          <figure  data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
             <div class="step"><img src="images/register.png" alt="a registration icon"></div>
-            Register
-          </div>
+            <p>Register</p>
+          </figure>
 
-          <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="100"  data-aos-offset="100"> 
+          <figure  data-aos="fade-up" data-aos-delay="200" data-aos-duration="500"> 
             <div class="step"><img src="images/activate.png" alt="an account activation icon"></div>
-            Activate 
-          </div>
+            <p>Activate</p> 
+          </figure>
 
-          <div  data-aos="fade-up" data-aos-duration="400" data-aos-delay="200"  data-aos-offset="100">
+          <figure data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
             <div class="step"><img src="images/fund.png" alt="payment icon"></div>
-            Fund 
-          </div>
+            <p>Fund</p> 
+          </figure>
 
-          <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="300"  data-aos-offset="100">
+          <figure data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
             <div class="step"><img src="images/trade.png" alt="trade crypto icon"></div>
-            Trade 
-        </div>
+            <p>Trade</p> 
+        </figure>
 
         </div>
         <!-- <div class="steps second-line"></div> -->
@@ -323,23 +324,23 @@
 
     <section id="why-us" class="section-styling-one">
       <div class="container">
-        <h2 class="heading-secondary">Why choose us?</h2>
+        <h2 class="heading-secondary animate-heading" data-aos="fade-right" data-aos-duration="600" data-aos-offset="50" >Why choose us?</h2>
         <div class="why-us-box">
-          <div class="why-us-wrapper" data-aos="zoom-in-up"  data-aos-offset="100">
+          <div class="why-us-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
             <img src="images/simplicity.png" alt="customer-support">
             <h4 class="heading-fouth">Simplicity</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, eligendi.</p>
           </div>
 
 
-          <div class="why-us-wrapper" data-aos="zoom-in-up"  data-aos-offset="100">
+          <div class="why-us-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
             <img src="images/security.png" alt="customer-support">
             <h4 class="heading-fouth">Security</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, eligendi.</p>
           </div>
 
           
-          <div class="why-us-wrapper" data-aos="zoom-in-up"  data-aos-offset="100">
+          <div class="why-us-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
             <img src="images/payment.png" alt="customer-support">
             <h4 class="heading-fouth">Swift Transactions</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, eligendi.</p>
@@ -352,12 +353,12 @@
       <div class="container ">
         <div class="display-flex">
 
-          <div class="support__image image-animate" data-aos="fade-right">
+          <div class="support__image animate-image"  data-aos="fade-up">
             <img class="image-reset" src="images/live-support.png" alt="wokie">
           </div>
 
-          <div class="support__text"  >
-            <h3 class="heading-tertiary">We're Here for You 24/7: <span>Instant Live Support!</span></h3>
+          <div class="support__text "  >
+            <h3 class="heading-tertiary animate-heading" data-aos="fade-right" data-aos-duration="600"  data-aos-offset="50">We're Here for You 24/7: <span>Instant Live Support!</span></h3>
             <div class="support-paragraph">
               <p>No matter where you are on your crypto journey, our legendary customer support team is a simple tap away - right inside of the crypto wallet app!</p>
             
@@ -494,13 +495,29 @@
    <!-- <div class="overlay"></div> -->
 
     <script src="app.js"></script>
+
+    <!-- <script>
+      ScrollReveal({
+         reset: true,
+         distance: '60px',
+         duration: 1500,
+         delay: 400,
+        });
+
+        ScrollReveal().reveal('.animate-heading', {delay: 300, origin: 'left', duration: 1000, distance: '30px' });
+
+        ScrollReveal().reveal('.animate-image', {delay: 500, origin: 'bottom', duration: 2000 });
+
+    </script> -->
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 220,
-        delay: 0,
-        duration: 800,
-      });
-    </script>
+  <script>
+    AOS.init({
+      offset: 100, // offset (in px) from the original trigger point
+      delay: 100, // values from 0 to 3000, with step 50ms
+      duration: 800, // values from 0 to 3000, with step 50ms
+      easing: 'ease-in', // default easing for AOS animations
+    });
+  </script>
   </body>
 </html>

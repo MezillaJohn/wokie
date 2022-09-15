@@ -29,6 +29,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,7 +39,7 @@ body {
   font-weight: 400;
   line-height: 1.3;
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .image-reset {
@@ -327,7 +328,7 @@ header {
   padding-right: 5rem;
 }
 
-.send__text h4 {
+.send__text--h4 {
   text-transform: uppercase;
   margin-bottom: var(--space-smallest);
 }
@@ -347,7 +348,7 @@ header {
   flex-wrap: wrap;
 }
 
-.steps div {
+.steps figure {
   flex: 1;
   padding: 3rem;
 }
@@ -551,16 +552,18 @@ header {
   .hero-imageBox {
     width: 22rem;
   }
+
+  .send__text {
+    flex: 1 1 100%;
+    margin-right: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-  
-  
   html {
     font-size: 62.5%;
   }
-  
-  
 
   .section-styling-one,
   .section-styling-two {
@@ -674,7 +677,7 @@ header {
   .support__image,
   .send__image,
   .exchange__image {
-    width: 80%;
+    max-width: 50rem;
   }
 
   /* //////////////////////////////////////////// */
@@ -705,17 +708,17 @@ header {
   /* //////////////////////////////////////////// */
 
   .send__text {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
 
-  .send__text h3 {
+  .send__text--h3 {
     margin-bottom: var(--space-small);
   }
 
   /* //////////////////////////////////////////// */
 
   .support__image {
-    margin: 0 0 8rem 0;
+    margin: 0 0 6rem 0;
   }
 
   .why-us-box {
@@ -760,7 +763,7 @@ header {
   .support__image,
   .send__image,
   .exchange__image {
-    width: 90%;
+    /* width: 90%; */
   }
 }
 
@@ -771,7 +774,6 @@ header {
 }
 
 @media (max-width: 464px) {
-  
   .heading-secondary {
     font-size: 3rem;
   }
@@ -792,7 +794,7 @@ header {
     font-size: 1.3rem;
   }
 
-  .send__text h4 {
+  .send__text--h4 {
     font-size: 1.3rem;
   }
 
@@ -883,11 +885,17 @@ header {
     width: 18rem;
     /* transform: rotate(-12deg); */
   }
+
+  .assets__coin {
+    margin-right: 2rem;
+    width: 11rem;
+    height: 12rem;
+  }
 }
 
 @media only screen and (max-width: 319px) {
   .assets__coin {
-    margin-right: 0;
+    margin-right: 1rem;
   }
 
   .download-icons svg {
