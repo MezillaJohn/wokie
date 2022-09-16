@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wokie</title>
 
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
 
     <!-- AOS animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -324,7 +317,9 @@
 
     <section id="why-us" class="section-styling-one">
       <div class="container">
-        <h2 class="heading-secondary animate-heading" data-aos="fade-right" data-aos-duration="600" data-aos-offset="50" >Why choose us?</h2>
+        <div class="why-choose-us-heading">
+        <h2 class="heading-tertiary animate-heading" data-aos="fade-right" data-aos-duration="600" data-aos-offset="50" >Why <span> choose us?</span></h2>
+      </div>
         <div class="why-us-box">
           <div class="why-us-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
             <img src="images/simplicity.png" alt="customer-support">
@@ -515,7 +510,7 @@
     AOS.init({
       offset: 100, // offset (in px) from the original trigger point
       delay: 100, // values from 0 to 3000, with step 50ms
-      duration: 800, // values from 0 to 3000, with step 50ms
+      duration: 500, // values from 0 to 3000, with step 50ms
       easing: 'ease-in', // default easing for AOS animations
     });
   </script>
