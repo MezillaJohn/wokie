@@ -1,19 +1,25 @@
 @font-face {
-  font-family: "OpenSans";
-  src: url(font/OpenSans-Regular.ttf) format("truetype");
+  font-family: "Athletics";
+  src: url("./font/Athletics Regular.otf") format("truetype");
   font-weight: normal;
 }
 
-/* @font-face {
-  font-family: "OpenSans";
-  src: url(font/OpenSans-Bold.ttf) format("truetype");
-  font-weight: bolder;
-} */
+@font-face {
+  font-family: "Athletics";
+  src: url("./font/Athletics Black.otf") format("truetype");
+  font-weight: 800;
+}
 
 @font-face {
-  font-family: "OpenSans";
-  src: url(font/OpenSans-ExtraBold.ttf) format("truetype");
-  font-weight: bold;
+  font-family: "Athletics";
+  src: url("./font/Athletics ExtraBold.otf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: url("./font/Athletics Bold.otf") format("truetype");
+  font-weight: 600;
 }
 
 /* BASIC RESET */
@@ -51,11 +57,9 @@ html {
 body {
   font-size: var(--defaultFontSize);
   color: var(--colDark);
-  font-family: "OpenSans";
-  /* font-weight: normal; */
+  font-family: "Athletics", sans-serif;
   line-height: 1.3;
   position: relative;
-  /* overflow-x: hidden; */
 }
 
 .image-reset {
@@ -70,21 +74,12 @@ body {
 .container {
   max-width: 112rem;
   margin: 0 auto;
-  /* border: solid 2px black; */
   transition: opacity 1.5s, transform 1.5s;
 }
 
-.heading-secondary {
-  font-size: var(--secondary-heading);
-  color: var(--primaryCol);
-
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: var(--space-big);
-}
-
 .heading-tertiary {
-  font-weight: medium;
+  font-weight: 700;
+  font-family: "Athletics", sans-serif;
   font-size: var(--tertiary-heading);
   margin-bottom: var(--space);
 }
@@ -96,7 +91,7 @@ body {
 .heading-fouth {
   font-size: 2.5rem;
   color: inherit;
-  font-weight: medium;
+  font-weight: 600;
   margin-bottom: var(--space-smallest);
 }
 
@@ -116,11 +111,6 @@ body {
   align-items: center;
   /* border: 1px solid black; */
 }
-
-/* .containe {
-  width: 40%;
-  margin: 0 auto;
-} */
 
 /* BASIC RESET ENDS */
 
@@ -207,7 +197,7 @@ header {
 
 .hero-text {
   font-size: 7rem;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
   margin-bottom: var(--space-smallest);
 }
@@ -403,6 +393,10 @@ header {
   margin-bottom: var(--space-smallest);
 }
 
+.payment-img {
+  width: 5rem;
+}
+
 .why-us-wrapper p {
   width: 80%;
   margin: 0 auto;
@@ -538,6 +532,64 @@ header {
   transition: transform 1.5s, opacity 1.5s;
 }
 
+/* /////////////////////////////////////////////// */
+
+/* FAQ */
+
+#FAQ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faq {
+  max-width: 65rem;
+  margin-bottom: var(--space-small);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1.5rem 1.5rem 0.8rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.faq__question h4 {
+  font-size: 1.6rem;
+  margin-right: 3rem;
+}
+
+.faq__question figure img {
+  width: 1.5rem;
+  height: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+}
+
+.answer p {
+  font-size: 1.4rem;
+}
+
+.faq.active .answer {
+  max-height: 30rem;
+}
+
+.faq.rotate figure img {
+  transform: rotate(180deg);
+}
+
+/* ////////////////////////////////////////////// */
+
 @media only screen and (max-width: 1320px) {
   header {
     padding: 0 5rem;
@@ -604,7 +656,7 @@ header {
   }
 
   .nav-bar {
-    height: 0;
+    max-height: 0;
     position: absolute;
     z-index: 10000;
     top: 8rem;
@@ -613,12 +665,12 @@ header {
     width: 100vw;
     /* border-top: 1px solid #fff; */
     background-color: var(--primaryCol);
-    transition: 0.2s;
+    transition: max-height 0.2s ease;
     overflow: auto;
   }
 
   .nav-bar.active {
-    height: 60vh;
+    max-height: 60vh;
   }
 
   .nav-bar ul {
@@ -731,7 +783,15 @@ header {
   /* //////////////////////////////////////////// */
 
   .support__image {
-    margin: 0 0 6rem 0;
+    margin: 0;
+  }
+
+  .support__text {
+    margin-bottom: 6rem;
+  }
+
+  .Support {
+    flex-direction: column-reverse;
   }
 
   .why-us-box {
@@ -771,12 +831,6 @@ header {
   .send__text {
     margin-right: 0;
     padding-right: 0;
-  }
-
-  .support__image,
-  .send__image,
-  .exchange__image {
-    /* width: 90%; */
   }
 }
 

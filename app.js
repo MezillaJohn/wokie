@@ -2,12 +2,8 @@
 const NavBar = document.querySelector(".nav-bar");
 const Burger = document.querySelector(".hamburger");
 const NavList = document.querySelector(".nav-links");
-const btc = document.getElementById("bitcoin");
-const ethe = document.getElementById("ethereum");
-const tether = document.getElementById("tether");
-const doge = document.getElementById("dogecoin");
-// const container = document.querySelectorAll(".container");
-// const imageAnimate = document.querySelectorAll(".image-animate");
+const faqs = document.querySelector("#FAQ");
+const faq = document.querySelectorAll(".faq");
 
 const navigation = function () {
   const NavListToggle = () => {
@@ -35,53 +31,27 @@ NavList.addEventListener("click", function (e) {
 });
 //////////////////////////////////////////
 
-// Reveal element on scroll functionality
-
-// const secObsFn = function (entries) {
-//   const [entry] = entries;
-//   if (!entry.isIntersecting) return;
-//   entry.target.classList.remove("animate");
-// };
-
-// const sectionObserver1 = new IntersectionObserver(secObsFn, {
-//   root: null,
-//   threshold: 0.1,
+// Frequently asked question
+// faqs.forEach((faq) => {
+//   faq.addEventListener("click", function (e) {
+//     if (e.target.classList.contains("faq__question")) {
+//       faq.classList.toggle("active");
+//     }
+//   });
 // });
 
-// container.forEach((section) => {
-//   sectionObserver1.observe(section);
-//   section.classList.add("animate");
-// });
+faqs.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".faq");
+  clicked.classList.toggle("active");
+  clicked.classList.toggle("rotate");
 
-// const secObsFn = function (entries) {
-//   const [entry] = entries;
-//   if (!entry.isIntersecting) return;
-//   if (
-//     entry.target.classList.contains("support__image") ||
-//     entry.target.classList.contains("assets")
-//   ) {
-//     entry.target.classList.remove("animate-left");
-//   } else {
-//     entry.target.classList.remove("animate-right");
-//   }
-// };
-
-// const sectionObserver1 = new IntersectionObserver(secObsFn, {
-//   root: null,
-//   threshold: 0.1,
-// });
-
-// imageAnimate.forEach((image) => {
-//   sectionObserver1.observe(image);
-//   if (
-//     image.classList.contains("support__image") ||
-//     image.classList.contains("assets")
-//   ) {
-//     image.classList.add("animate-left");
-//   } else {
-//     image.classList.add("animate-right");
-//   }
-// });
+  // if (clicked.classList.contains("active")) {
+  //   faq.forEach((f) => f.classList.remove("active"));
+  //   // clicked.classList.remove("active");
+  // } else {
+  // }
+});
+///////////////////////////////////////////
 
 //Fetching crypto prices
 
