@@ -175,12 +175,7 @@ header {
   color: var(--primaryCol);
 }
 
-.nav-link:hover {
-  color: var(--primaryCol);
-  background-color: var(--secondaryCol);
-}
-
-.nav-link:active {
+.nav-link:hover,nav-link:visited,nav-link:focus {
   color: var(--primaryCol);
   background-color: var(--secondaryCol);
 }
