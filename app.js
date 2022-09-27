@@ -4,6 +4,8 @@ const Burger = document.querySelector(".hamburger");
 const NavList = document.querySelector(".nav-links");
 const faqs = document.querySelector("#FAQ");
 const faq = document.querySelectorAll(".faq");
+const Header = document.querySelector(".header");
+const HeroSection = document.querySelector(".hero");
 
 const navigation = function () {
   const NavListToggle = () => {
@@ -27,6 +29,9 @@ NavList.addEventListener("click", function (e) {
   if (e.target.classList.contains("nav-link")) {
     const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    NavBar.classList.toggle("active");
+    Burger.classList.toggle("toggle");
+    NavList.classList.toggle("animate");
   }
 });
 //////////////////////////////////////////
@@ -52,6 +57,23 @@ faqs.addEventListener("click", function (e) {
   // }
 });
 ///////////////////////////////////////////
+
+// Navigation fixed functionality using intersection API
+
+const navFixed = (entries) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) Header.classList.add("fixed");
+  else Header.classList.remove("fixed");
+};
+
+const navObserver = new IntersectionObserver(navFixed, {
+  root: null,
+  threshold: 0,
+  rootMargin: "-10px",
+});
+
+navObserver.observe(HeroSection);
+/////////////////////////////////////////////////////////
 
 //Fetching crypto prices
 

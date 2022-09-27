@@ -10,6 +10,9 @@
     <!-- AOS animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <!-- FONT AWSOME CDN  -->
     <link
       rel="stylesheet"
@@ -24,46 +27,48 @@
 
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img class="logo" src="images/logo2.png" alt="logo" />
-      </div>
-      <div class="hamburger">
-        <div class="line-1"></div>
-        <div class="line-2"></div>
-        <div class="line-3"></div>
-      </div>
-      <nav class="nav-bar">
-        <ul class="nav-links">
-          
-          <li class="nav-item">
-            <a href="#Buy-Sell" class='nav-link nav-link-col'>Buy & Sell Crypto</a>
-          </li>
-          
-          <li class="nav-item"  >
-            <a href="#Send-Receive" class='nav-link nav-link-col' >Send & Receive</a>
-          </li>
+    
 
-          <li class="nav-item" >
-            <a href="#Support" class='nav-link nav-link-col'>Live-Support</a>
-          </li>
+    <div class="header-wrapper">
+ 
+      <header class="header">
+        <div class="logo">
+          <a href="#hero"><img class="logo" src="images/logo2.png" alt="logo" /></a>
+        </div>
+        <div class="hamburger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <nav class="nav-bar">
+          <ul class="nav-links">
+            
+            <li class="nav-item">
+              <a href="#Buy-Sell" class='nav-link nav-link-col'>Buy & Sell Crypto</a>
+            </li>
+            
+            <li class="nav-item"  >
+              <a href="#Send-Receive" class='nav-link nav-link-col' >Send & Receive</a>
+            </li>
+  
+            <li class="nav-item" >
+              <a href="#Support" class='nav-link nav-link-col'>Live-Support</a>
+            </li>
+  
+            <li class="nav-item" >
+              <a href="#FAQ" class='nav-link nav-link-col'>FAQ</a>
+            </li>
+  
+            <li class="nav-item" >
+              <a  href="#Contact" class='nav-link nav-link-col contact'>Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-          <li class="nav-item" >
-            <a href="#FAQ" class='nav-link nav-link-col'>FAQ</a>
-          </li>
-
-          <li class="nav-item" >
-            <a  href="#Contact" class='nav-link nav-link-col contact'>Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="hero">
+    <div class="hero" id="hero">
       <div class=" container ">
         <div class="herobox" >
-
-
         <div class="hero-textBox">
           <h2 class="hero-text">
             <span class="hero-textA">crypto @ your</span>
@@ -156,13 +161,25 @@
 
         </div>
 
-        <div class="hero-imageBox phone" >
-          <img class="image-reset" src="images/phone2.jpg" alt="phone" />
+        <div id="carouselExampleSlidesOnly" class="carousel carousel-fade"  data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-inner">
+            <div class="carousel-item active hero-imageBox phone">
+              <img class="image-reset hero-image" src="images/phone.jpg" alt="wokie interface" />
+            </div>
+            <div class="carousel-item hero-imageBox phone">
+              <img class="image-reset hero-image" src="images/phone2.jpg" alt="wokie interface" />
+            </div>
+          </div>
+        </div>
+
+        <div class=" phone" >
+          
         </div>
        
       </div>
     </div>
     </div>
+  </div>
 
     <section  id="Buy-Sell" class="section-styling-one">
       <div class="container">
@@ -172,7 +189,7 @@
          
 
           <div class="exchange__text " >
-            <h3 class="heading-tertiary animate-heading " data-aos="fade-right" data-aos-duration="600"  data-aos-offset="50"> <span>All-in-One</span> for Your Crypto</h3>
+            <h3 class="heading-tertiary animate-heading " data-aos="zoom-in" data-aos-duration="600"  data-aos-offset="50"> <span>All-in-One</span> for Your Crypto</h3>
             <div class="features">
               <p><span>&check;</span> Buy, sell, and trade in a few taps. </p>
               <p><span>&check;</span> Earn up to 8% yield on your crypto. </p>
@@ -192,7 +209,7 @@
       <div class="container ">
         <div class="explore-box">
        
-        <div class="assets animate-image" data-aos="fade-up" >
+        <div class="assets animate-image" data-aos="fade-up">
           <div class="assets__coin" >
             <div class="coin">
               <img height="40px" src="images/bitcoin.png" alt="logo" />
@@ -227,8 +244,8 @@
           </div>
 
 
-          <div class="explore "  >
-            <h3 class="heading-tertiary explore-header animate-heading" data-aos-offset="50" data-aos="fade-right" data-aos-duration="600" >Explore <span>top Crypto's Currencies</span></h3>
+          <div class="explore ">
+            <h3 class="heading-tertiary explore-header animate-heading" data-aos-offset="50" data-aos="zoom-in" data-aos-duration="600" >Explore <span>top Crypto's Currencies</span></h3>
             <p>Buy, sell and store hundreds of CryptoCurrencies with our App</p>
           </div>
 
@@ -243,7 +260,7 @@
         <div class="display-flex">
 
           <div class="send__text  " >
-            <div class="animate-heading" data-aos="fade-right" data-aos-offset="50" data-aos-duration="600" >
+            <div class="animate-heading" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="600" >
             <h4 class="send__text--h4">Crypto Simplified</h4>
             <h3  class="heading-tertiary  send__text--h3"><span>Send and Receive Crypto</span> from anywhere in the World</h3>
           </div>
@@ -269,7 +286,7 @@
           </div>
 
           <div class="support__text "  >
-            <h3 class="heading-tertiary animate-heading" data-aos="fade-right" data-aos-duration="600"  data-aos-offset="50">We're Here for You 24/7: <span>Instant Live Support!</span></h3>
+            <h3 class="heading-tertiary animate-heading" data-aos="zoom-in" data-aos-duration="600"  data-aos-offset="50">We're Here for You 24/7: <span>Instant Live Support!</span></h3>
             <div class="support-paragraph">
               <p>No matter where you are on your crypto journey, our legendary customer support team is a simple tap away - right inside of the crypto wallet app!</p>
             
@@ -285,7 +302,7 @@
     <section class="section-styling-one" id="GetStarted">
       <div class="container">
         <div class="simple-steps">
-        <h3 class="heading-tertiary animate-heading" data-aos="fade-right" data-aos-duration="600" >Four <span>Simple Steps</span></h3>
+        <h3 class="heading-tertiary animate-heading" data-aos="zoom-in" data-aos-duration="600" >Four <span>Simple Steps</span></h3>
 
         <div class="steps">
           <figure  data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
@@ -342,27 +359,28 @@
     <section id="why-us" class="section-styling-two">
       <div class="container">
         <div class="why-choose-us-heading">
-        <h2 class="heading-tertiary animate-heading" data-aos="fade-right" data-aos-duration="600" data-aos-offset="50" >Why <span> choose us?</span></h2>
+        <h2 class="heading-tertiary animate-heading" data-aos="zoom-in" data-aos-duration="600" data-aos-offset="50" >Why <span> choose us?</span></h2>
       </div>
         <div class="why-us-box">
           <div class="why-us-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
             <img src="images/simplicity.png" alt="customer-support">
             <h4 class="heading-fouth">Simplicity</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, eligendi.</p>
+            <p>Kraken makes it easy to buy and sell
+              crypto using our mobile apps.</p>
           </div>
 
 
           <div class="why-us-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
             <img src="images/security.png" alt="customer-support">
             <h4 class="heading-fouth">Security</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, eligendi.</p>
+            <p>Wokie Security is unlike every other wallet: It's better. never lose access to your crypto wallets again.</p>
           </div>
 
           
           <div class="why-us-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
             <img  src="images/payment.png" alt="customer-support">
             <h4 class="heading-fouth">Swift Transactions</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, eligendi.</p>
+            <p>with transactions like the speed of light, wokie has made trading crypto intresting.</p>
           </div>
         </div>
       </div>
@@ -370,83 +388,84 @@
 
     <section id="FAQ" class="section-styling-two">
 
-      <h3 class="heading-tertiary animate-heading" data-aos="fade-right" data-aos-duration="600" >Frequently asked question</h3>
+      <h3 class="heading-tertiary animate-heading" data-aos="zoom-in" data-aos-duration="600" >Frequently asked question</h3>
 
       <div class="faq">
         <div class="faq__question">
-          <h4 class="heading-fouth">What is the Wokie app all about</h4>
+          <h4 class="heading-fouth">What is the Wokie app all about?</h4>
           <figure>
             <img src="images/arrow-down.png" alt="">
           </figure>
         </div>
 
         <div class="answer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quis provident voluptates quos asperiores sed neque perferendis consequuntur unde natus?</p>
+          <p>Wokie is a crypto trading platform that allows you to buy, sell, send, receive and store your CryptoCurrencies</p>
         </div>
       </div>
 
       <div class="faq">
         <div class="faq__question">
-          <h4 class="heading-fouth">What are the charges on sending and receiving crypto</h4>
+          <h4 class="heading-fouth">What are the charges on sending and receiving crypto?</h4>
           <figure>
            <img src="images/arrow-down.png" alt="">
           </figure>
         </div>
 
         <div class="answer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quis provident voluptates quos asperiores sed neque perferendis consequuntur unde natus?</p>
+          <p>Receiving crypto to your wallet is free, Sending from one wokie account to another wokie account is also free, but sending outside wokie is 0.10 per dollar</p>
         </div>
       </div>
 
       <div class="faq">
         <div class="faq__question">
-          <h4 class="heading-fouth">How many withdrawal request can i make daily</h4>
+          <h4 class="heading-fouth">How many withdrawal request can i make daily?</h4>
           <figure>
             <img src="images/arrow-down.png" alt="">
           </figure>
         </div>
 
         <div class="answer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quis provident voluptates quos asperiores sed neque perferendis consequuntur unde natus?</p>
+          <p>You can make unlimited withdrawal</p>
         </div>
       </div>
 
+
       <div class="faq">
         <div class="faq__question">
-          <h4 class="heading-fouth">What currencies will i receive my money in</h4>
+          <h4 class="heading-fouth">How do i pay into my wallet?</h4>
           <figure>
             <img src="images/arrow-down.png" alt="">
           </figure>
         </div>
 
         <div class="answer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quis provident voluptates quos asperiores sed neque perferendis consequuntur unde natus?</p>
+          <p>You can pay in via scholapay</p>
         </div>
       </div>
 
       <div class="faq">
         <div class="faq__question">
-          <h4 class="heading-fouth">What is the limit on withdrawal</h4>
+          <h4 class="heading-fouth">What currencies will i receive my money in?</h4>
           <figure>
             <img src="images/arrow-down.png" alt="">
           </figure>
         </div>
 
         <div class="answer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quis provident voluptates quos asperiores sed neque perferendis consequuntur unde natus?</p>
+          <p>It depends on your local exchange</p>
         </div>
       </div>
 
       <div class="faq">
         <div class="faq__question">
-          <h4 class="heading-fouth">How long does it take for my withdrawal request to be processed</h4>
+          <h4 class="heading-fouth">What is the limit on withdrawal?</h4>
           <figure>
             <img src="images/arrow-down.png" alt="">
           </figure>
         </div>
 
         <div class="answer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quis provident voluptates quos asperiores sed neque perferendis consequuntur unde natus?</p>
+          <p>there is no limit on withdrawal</p>
         </div>
       </div>
 
@@ -562,7 +581,7 @@
             </ul>
           </nav>
 
-          <div class="copywrite">© wokie Ltd</div>
+          <div class="copywrite">© wokie Ltd  |  <a href="terms.html">Terms & Conditions</a></div>
 
         </div>
       </div>
@@ -602,5 +621,8 @@
       easing: 'ease-in', // default easing for AOS animations
     });
   </script>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
