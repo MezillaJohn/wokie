@@ -438,6 +438,10 @@ header {
   font-size: 2rem;
 }
 
+.support-paragraph p span {
+  color: var(--primaryCol);
+}
+
 /* six section */
 #footer {
   /* background-color: var(--primaryCol); */
