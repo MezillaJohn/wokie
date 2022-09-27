@@ -176,8 +176,8 @@ header {
 }
 
 .nav-link:hover,nav-link:visited,nav-link:focus {
-  color: var(--primaryCol);
-  background-color: var(--secondaryCol);
+  color: var(--primaryCol) !important;
+  background-color: var(--secondaryCol) !important;
 }
 
 /* HAM BURGER MENU DESIGN */
