@@ -74,20 +74,3 @@ const navObserver = new IntersectionObserver(navFixed, {
 
 navObserver.observe(HeroSection);
 /////////////////////////////////////////////////////////
-
-//Fetching crypto prices
-
-let settings = {
-  async: true,
-  scrossDomain: true,
-  url: "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cdogecoin%2Ctether&vs_currencies=usd",
-  method: "GET",
-  headers: {},
-};
-
-$.ajax(settings).done(function (response) {
-  btc.innerHTML = response.bitcoin.usd;
-  ethe.innerHTML = response.ethereum.usd;
-  tether.innerHTML = response.tether.usd;
-  doge.innerHTML = response.dogecoin.usd;
-});
