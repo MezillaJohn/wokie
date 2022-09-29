@@ -6,16 +6,26 @@ const faqs = document.querySelector("#FAQ");
 const faq = document.querySelectorAll(".faq");
 const Header = document.querySelector(".header");
 const HeroSection = document.querySelector(".hero");
+const Overlay = document.querySelector(".overlay");
+
+const ToggleClass = function () {
+  NavBar.classList.toggle("active");
+  Burger.classList.toggle("toggle");
+  NavList.classList.toggle("animate");
+  Overlay.classList.toggle("backdrop");
+};
 
 const navigation = function () {
   const NavListToggle = () => {
-    NavBar.classList.toggle("active");
-    Burger.classList.toggle("toggle");
-    NavList.classList.toggle("animate");
-    console.log("hello");
+    ToggleClass();
+  };
+
+  const Backdrop = () => {
+    ToggleClass();
   };
   // Event listener
   Burger.addEventListener("click", NavListToggle);
+  Overlay.addEventListener("click", Backdrop);
 };
 
 navigation();
@@ -29,32 +39,14 @@ NavList.addEventListener("click", function (e) {
   if (e.target.classList.contains("nav-link")) {
     const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-    NavBar.classList.toggle("active");
-    Burger.classList.toggle("toggle");
-    NavList.classList.toggle("animate");
+    ToggleClass();
   }
 });
-//////////////////////////////////////////
-
-// Frequently asked question
-// faqs.forEach((faq) => {
-//   faq.addEventListener("click", function (e) {
-//     if (e.target.classList.contains("faq__question")) {
-//       faq.classList.toggle("active");
-//     }
-//   });
-// });
 
 faqs.addEventListener("click", function (e) {
   const clicked = e.target.closest(".faq");
   clicked.classList.toggle("active");
   clicked.classList.toggle("rotate");
-
-  // if (clicked.classList.contains("active")) {
-  //   faq.forEach((f) => f.classList.remove("active"));
-  //   // clicked.classList.remove("active");
-  // } else {
-  // }
 });
 ///////////////////////////////////////////
 
