@@ -40,6 +40,7 @@ NavList.addEventListener("click", function (e) {
     const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
     ToggleClass();
+    Overlay.classList.remove("backdrop");
   }
 });
 

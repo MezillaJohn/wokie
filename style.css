@@ -374,6 +374,7 @@ header {
 /* steps */
 
 .simple-steps,
+.partners,
 .why-choose-us-heading {
   text-align: center;
 }
@@ -407,6 +408,24 @@ header {
 
 .step img {
   height: 3rem;
+}
+
+/* partners */
+.partners-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.patners-heading {
+  margin-bottom: 6rem;
+}
+
+.partners-container div img {
+  height: 6rem;
 }
 
 /* fourth section */
@@ -708,6 +727,10 @@ header {
     margin-right: 3rem;
     padding-right: 3rem;
   }
+
+  .partners-container div img {
+    height: 5rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -873,7 +896,20 @@ header {
     flex-direction: column-reverse;
   }
 
-  .why-us-box {
+  .patners-heading {
+    margin-bottom: 4rem;
+  }
+
+  .partners-container div {
+    margin-bottom: 3rem;
+  }
+
+  .partners-container div img {
+    height: 4rem;
+  }
+
+  .why-us-box,
+  .partners-container {
     flex-direction: column;
   }
 
